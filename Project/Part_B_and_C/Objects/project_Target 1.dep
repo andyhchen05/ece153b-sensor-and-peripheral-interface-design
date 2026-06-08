@@ -1,0 +1,67 @@
+Dependencies for Project 'project', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6240000::V6.24::ARMCLANG
+F (.\src\main.c)(0x6A273669)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/main.o -MMD)
+I (src\stm32l476xx.h)(0x6A2735C2)
+I (C:\Users\andyh\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x69CC336C)
+I (src\SysClock.h)(0x6A2735C8)
+I (src\SysTimer.h)(0x6A1E3815)
+I (src\LED.h)(0x6A14B5D9)
+I (src\DMA.h)(0x6A1E0EC3)
+I (src\UART.h)(0x6A18B759)
+I (src\motor.h)(0x6A14B5D9)
+I (src\SPI.h)(0x6A14B5D9)
+I (src\I2C.h)(0x6A14B5D9)
+I (src\accelerometer.h)(0x6A14B5D9)
+F (.\src\startup_stm32l476xx.s)(0x6A14B5D9)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 543" -Wa,armasm,--pd,"STM32L476xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32l476xx.o)
+F (.\src\stm32l476xx.h)(0x6A2735C2)()
+F (.\src\SysClock.h)(0x6A2735C8)()
+F (.\src\SysClock.c)(0x6A18B717)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/sysclock.o -MMD)
+I (src\SysClock.h)(0x6A2735C8)
+I (src\stm32l476xx.h)(0x6A2735C2)
+I (C:\Users\andyh\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x69CC336C)
+F (.\src\SysTimer.h)(0x6A1E3815)()
+F (.\src\SysTimer.c)(0x6A20B6DE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/systimer.o -MMD)
+I (src\SysTimer.h)(0x6A1E3815)
+I (src\stm32l476xx.h)(0x6A2735C2)
+I (C:\Users\andyh\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x69CC336C)
+I (src\motor.h)(0x6A14B5D9)
+F (.\src\DMA.h)(0x6A1E0EC3)()
+F (.\src\DMA.c)(0x6A2735CD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/dma.o -MMD)
+I (src\DMA.h)(0x6A1E0EC3)
+I (src\stm32l476xx.h)(0x6A2735C2)
+I (C:\Users\andyh\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x69CC336C)
+I (src\SysTimer.h)(0x6A1E3815)
+F (.\src\UART.h)(0x6A18B759)()
+F (.\src\UART.c)(0x6A2736C8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/uart.o -MMD)
+I (src\UART.h)(0x6A18B759)
+I (src\stm32l476xx.h)(0x6A2735C2)
+I (C:\Users\andyh\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x69CC336C)
+I (src\DMA.h)(0x6A1E0EC3)
+F (.\src\I2C.c)(0x6A1E10B5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/i2c.o -MMD)
+I (src\I2C.h)(0x6A14B5D9)
+I (src\stm32l476xx.h)(0x6A2735C2)
+I (C:\Users\andyh\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x69CC336C)
+F (.\src\I2C.h)(0x6A14B5D9)()
+F (.\src\SPI.c)(0x6A1E2FA3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/spi.o -MMD)
+I (src\SPI.h)(0x6A14B5D9)
+I (src\stm32l476xx.h)(0x6A2735C2)
+I (C:\Users\andyh\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x69CC336C)
+I (src\SysTimer.h)(0x6A1E3815)
+F (.\src\SPI.h)(0x6A14B5D9)()
+F (.\src\LED.h)(0x6A14B5D9)()
+F (.\src\LED.c)(0x6A18B7ED)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/led.o -MMD)
+I (src\LED.h)(0x6A14B5D9)
+I (src\stm32l476xx.h)(0x6A2735C2)
+I (C:\Users\andyh\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x69CC336C)
+F (.\src\motor.c)(0x6A1E1FAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/motor.o -MMD)
+I (src\stm32l476xx.h)(0x6A2735C2)
+I (C:\Users\andyh\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x69CC336C)
+I (src\motor.h)(0x6A14B5D9)
+F (.\src\motor.h)(0x6A14B5D9)()
+F (.\src\accelerometer.c)(0x6A18B896)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-IC:/Users/andyh/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/andyh/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include-D__UVISION_VERSION="543" -DSTM32L476xx -D_RTE_-o ./objects/accelerometer.o -MMD)
+I (src\SPI.h)(0x6A14B5D9)
+I (src\stm32l476xx.h)(0x6A2735C2)
+I (C:\Users\andyh\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x69CC336C)
+I (src\SysTimer.h)(0x6A1E3815)
+I (src\accelerometer.h)(0x6A14B5D9)
+F (.\src\accelerometer.h)(0x6A14B5D9)()

@@ -1,0 +1,61 @@
+/*
+ * ECE 153B
+ *
+ * Name(s): Andy Chen, Karl Tizon
+ * Section: Monday 6PM
+ * Project
+ */
+ 
+#include "SysTimer.h"
+#include "motor.h"
+
+#define T_MIN 2
+
+static uint32_t volatile step;
+static uint32_t volatile tickCount = 0;
+
+extern void App_SysTick_Hook(void);
+
+void SysTick_Init(void) {
+	// SysTick Control & Status Register
+	SysTick->CTRL = 0; // Disable SysTick IRQ and SysTick Counter
+
+	SysTick->LOAD = 79999;
+	SysTick->VAL = 0;
+	
+	// Enables SysTick exception request
+	// 1 = counting down to zero asserts the SysTick exception request
+	// 0 = counting down to zero does not assert the SysTick exception request
+	SysTick->CTRL |= SysTick_CTRL_TICKINT_Msk;
+	
+	SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk; 
+	// Select clock source
+	// If CLKSOURCE = 0, the external clock is used. The frequency of SysTick clock is the frequency of the AHB clock divided by 8.
+	// If CLKSOURCE = 1, the processor clock is used.
+	SysTick->CTRL |= SysTick_CTRL_CLKSOURCE_Msk;		
+	
+	// Enable SysTick IRQ and SysTick Timer
+	// Configure and Enable SysTick interrupt in NVIC
+	NVIC_EnableIRQ(SysTick_IRQn);
+	NVIC_SetPriority(SysTick_IRQn, 1); // Set Priority to 1
+}
+
+void SysTick_Handler(void) {
+	tickCount++;
+	App_SysTick_Hook();
+	static uint32_t motorCount = 0;
+	if (++motorCount >= T_MIN){
+		motorCount = 0;
+		rotate();
+	}
+	if (step > 0) step--;
+}
+
+void delay(uint32_t ms) {
+	step = ms;
+	while (step != 0);
+}
+
+uint32_t getTick(void) {
+	return tickCount;
+}
