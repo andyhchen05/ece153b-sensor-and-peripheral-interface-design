@@ -1,4 +1,4 @@
-# ECE153B: Sensor and Peripheral Interface Design
+# Sensor and Peripheral Interface Design
 
 ## Course Description
 Hardware description languages; field-programmable logic and ASIC design techniques. Mixed-signal techniques: A/D and D/A converter interfaces; video and audio signal acquisition, processing and generation, communication and network interfaces.
